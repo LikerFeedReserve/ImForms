@@ -5,6 +5,11 @@ actionLink: /intro/
 
 footer: "ECL 2.0 Licensed | Copyright © [2022] [Нестеров Дмитро]"
 ---
+**Посилання на командний репозиторій:**
+
+[Репозиторій](https://github.com/Dimdim28/ImForms "Командний репозиторій")
+
+[Деплой](https://dimdim28.github.io/ImForms/ "Командний деплой")
 
 **Виконали:**
 
