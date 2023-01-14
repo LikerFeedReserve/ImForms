@@ -1,4 +1,4 @@
-const Model = require("./model");
+const Model = require("./model.js");
 
 class Controllers {
   static resHandler = (res, data) => {
@@ -23,7 +23,8 @@ class Controllers {
 
   static createQuestion = async (req, res) => {
     if (!req.body) return res.sendStatus(400);
-    const id = Math.ceil(Math.random() * (100 - 1) * Math.random() * (100 - 1));
+    const forRandom = 99 //big number for big id
+    const id = Math.ceil(Math.random() * (forRandom) * Math.random() * (forRandom));
     await Model.postQuestion({ id, ...req.body })
       .then(() => Model.getQuestionById({ id }))
       .then((result) => {

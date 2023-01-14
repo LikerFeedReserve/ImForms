@@ -1,8 +1,7 @@
 const express = require("express");
-const Controllers = require("./controllers");
+const Controllers = require("./controllers.js");
 const app = express();
 const jsonParse = express.json();
-const { db } = require("./db");
 
 app.get("/api/question/:id", Controllers.getQuestion);
 app.get("/api/questions", Controllers.getAllQuestions);
